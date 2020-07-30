@@ -1,3 +1,8 @@
 # Can Ortholinear Keyboard
 
-Ortholinear keyboard PCB design.
+Ortholinear keyboard design.
+
+Includes
+- PCB design
+- Plate design
+- Firmware
