@@ -2,7 +2,8 @@
 
 Ortholinear keyboard design.
 
-Includes
+Includes, 
 - PCB design
 - Plate design
-- Firmware
+- Software (including firmware)
+
