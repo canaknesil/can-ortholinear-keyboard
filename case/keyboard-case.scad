@@ -1,5 +1,5 @@
-pcb_width = 286; // 185.750 mm (Set a bit larger than real PCB size.)
-pcb_height = 115; // 114.300 mm
+pcb_width = 287.75; // 185.750 mm (Set a bit larger than real PCB size.)
+pcb_height = 116.3; // 114.300 mm
 exact_pcb_height = 114.300;
 pcb_depth = 1.7; // 1.6 mm
 pcb_edge_case_thickness = 2;
@@ -14,13 +14,18 @@ arduino_width = 20; // 18.37 mm
 arduino_height = 57; // 57 mm (including area between top of arduino and pcb edge, and area having 2 diodes just under arduino that collide with a support line)
 arduino_depth = 15;
 arduino_usb_connector_width = 18; // Giving confortable space for the cable connector width.
-toggle_switch_hole_width = 38.1; // 38.1 mm
-toggle_switch_hole_height = 19; // 19.05 mm
+toggle_switch_hole_width = 40.1; // 38.1 mm
+toggle_switch_hole_height = 21.05; // 19.05 mm
 toggle_switch_hole_depth = 17;
 case_height = pcb_hole_depth + max(arduino_depth, toggle_switch_hole_depth) + 3; // As small as possible without any hole on the buttom of the case. Includes inclunation effect.
 text_depth = 0.5;
 text_side_gap = 2;
 text_top_gap = 2;
+pcb_offset_x = 39.24;
+pcb_offset_y = -31.625 - exact_pcb_height;
+pcb_offset_z = 0;
+
+display_pcb = false;
 
 module orthogonal_case() {
      difference() {
@@ -62,7 +67,6 @@ module orthogonal_case() {
 	  translate([pcb_edge_case_thickness,y,
 		     case_height - pcb_hole_depth - pcb_buttom_gap])
 	       cube([pcb_width, support_cube_thickness, pcb_buttom_gap]);
-
 }
 
 module orthogonal_case_with_extra_holes() {
@@ -86,8 +90,16 @@ module orthogonal_case_with_extra_holes() {
 		     pcb_edge_case_thickness + pcb_height - toggle_switch_hole_height,
 		     case_height - pcb_hole_depth - toggle_switch_hole_depth])
 	       cube([toggle_switch_hole_width, toggle_switch_hole_height, toggle_switch_hole_depth + 10]);
-     }
+     };
+
+     // PCB
+     if (display_pcb)
+	  translate([pcb_edge_case_thickness, pcb_edge_case_thickness, case_height - pcb_hole_depth])
+	       translate([-pcb_offset_x + 1, -pcb_offset_y + 1, pcb_offset_z])
+	       import("can-ortholinear-keyboard-pcb.stl");
 }
+
+
 
 // Inclination
 translate([0, pcb_edge_case_thickness * 2 + pcb_height, 0])
