@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   sodipodi:docname="cherry-no-stabilizers.svg"
+   sodipodi:docname="cherry-no-stabilizers-with-toggle-switches.svg"
    id="svg176"
    version="1.1"
    viewBox="0.000 0.000 295.752 124.302"
@@ -33,7 +33,7 @@
      inkscape:window-y="23"
      inkscape:window-x="0"
      inkscape:cy="78.076501"
-     inkscape:cx="963.22968"
+     inkscape:cx="942.22085"
      inkscape:zoom="2.9987398"
      inkscape:snap-center="true"
      inkscape:snap-object-midpoints="true"
@@ -48,8 +48,8 @@
      inkscape:snap-midpoints="true"
      showgrid="false"
      id="namedview178"
-     inkscape:window-height="855"
-     inkscape:window-width="1440"
+     inkscape:window-height="1005"
+     inkscape:window-width="1680"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -57,7 +57,8 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <polygon
      id="polygon10"
      style="fill:none;stroke-width:0.050000mm;stroke:black"
@@ -391,15 +392,36 @@
      style="fill:none;stroke-width:0.050000mm;stroke:black"
      points="7.526,7.526 7.526,8.526 6.726,8.526 6.726,11.626 7.526,11.626 7.526,17.426 6.726,17.426 6.726,20.526 7.526,20.526 7.526,21.526 21.526,21.526 21.526,20.526 22.326,20.526 22.326,17.426 21.526,17.426 21.526,11.626 22.326,11.626 22.326,8.526 21.526,8.526 21.526,7.526" />
   <circle
-     style="opacity:1;fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:square;paint-order:markers fill stroke"
-     id="path188-3"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:0.411764;stroke-linecap:square;paint-order:markers fill stroke"
+     id="path188-7-5-0"
      cx="278.14001"
      cy="14.525999"
-     r="3.9999998" />
+     r="3.2941179" />
   <circle
-     r="3.9999998"
+     r="3.2941179"
      cy="14.525999"
      cx="265.09003"
-     id="path188-7-5"
-     style="opacity:1;fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:square;paint-order:markers fill stroke" />
+     id="path188-7-5-0-9"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:0.411763;stroke-linecap:square;paint-order:markers fill stroke" />
+  <rect
+     y="-11.028938"
+     x="258.34183"
+     height="7.3232145"
+     width="2.4704821"
+     id="rect99"
+     style="fill:none;fill-rule:evenodd;stroke-width:0.264583" />
+  <rect
+     y="9.7049952"
+     x="264.17953"
+     height="4.8210044"
+     width="1.8210045"
+     id="rect924"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.178996;stroke-opacity:1" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.178996;stroke-opacity:1"
+     id="rect924-2"
+     width="1.8210045"
+     height="4.8210044"
+     x="277.22949"
+     y="9.7049942" />
 </svg>
