@@ -109,8 +109,8 @@ module case_with_inclination() {
 	       translate([0, -case_height, 0])
 	       orthogonal_case_with_extra_holes_and_pcb();
 	  
-	  translate([-300, -300, -80])
-	       cube([600, 600, 80]);
+	  translate([-10, -case_height - 10, -80])
+	       cube([case_width + 20, case_height + 20, 80]);
      };
 
      // Cover arduino hole opening from buttom.
