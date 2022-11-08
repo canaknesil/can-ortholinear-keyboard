@@ -1,5 +1,7 @@
 # Can Ortholinear Keyboard
 
+THIS PROJECT HAS NOT BEEN COMPLETED !!!
+
 Ortholinear keyboard design.
 
 Includes, 
